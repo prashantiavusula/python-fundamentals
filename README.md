@@ -1,2 +1,2 @@
-# python--fundamental
-my structured python learning  joutnet
+# python-fundamentals
+my structured python learning  joutney
