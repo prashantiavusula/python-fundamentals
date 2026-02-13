@@ -1,2 +1,2 @@
 # python-fundamentals
-my structured python learning  joutney
+my structured python learning  journey
