@@ -1,1 +1,50 @@
+PRINT "EVEN" IF THE NUMBER IS DIVISBLE BY 2?(ONLY FOR EVEN)
+
+If your goal is to print a number only if it’s divisible by 2:
+Check divisibility:
+Use the modulus operator (%) or the logic that checks if the number ends with 0, 2, 4, 6, or 8 (for decimal numbers).
+Decision:
+If divisible → print the number.
+If not → ignore it.
+
+If n % 2 == 0, then n is even.
+If n % 2 != 0, then n is odd (OR)  if n %2 ==1 is also odd
+  computer understand that 0=flase(even) and 1=true(odd)
+
+PROGRAM 
+n=int(input())
+if(n%2==0):
+  print("the number is even")
+___________________________________________________________________________________________________________________________________________________________________________________________
+PRINT "ODD" IF THE NUMBER IS DIVISBLE BY 2?(ONLY FOR ODD)
+n=int(input())
+if(n%2==1):
+  print("the number is odd")
+
+(or)
+
+n=int(input())
+if(n%2):
+  print("the number is odd")
+__________________________________________________________________________________________________________________________________________________________________________________________________
+for both even and odd
+ n=int(input())
+ if(n%2==0):
+    print("the number is even")
+ else:
+   print("the number is odd")
+_________________________________________________________________________________________________________________________________________________________________________________________________
+PRINT "POSTIVE" IF THE NUMBER IS GREATER THAN 0?
+A number is positive if it is greater than 0.
+Mathematically:
+𝑛>0
+Examples: 1, 5, 0.7, 100
+Numbers ≤ 0 (zero or negative) are not positive
+
+PROGRAM
+ n=int(input())
+if(n>0):                 ( note: if we give >=  this should give 0 is also postive)
+ print("postive")
+___________________________________________________________________________________________________________________________________________________________________________________________________
+
 
