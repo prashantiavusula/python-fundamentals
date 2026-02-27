@@ -1,0 +1,164 @@
+1. Print all numbers from 1 to 10. 
+for i in range(1,11):
+    print(i)
+______________________________________________________________________________________________________
+2.Print numbers from 10 down to 1 in reverse order. 
+for i in range(10,0,-1):
+    print(i)
+
+__________________________________________________________________________________________________
+3. Print all even numbers between 1 and 100. 
+for i in range(1,101):
+    if i%2==0:
+        print(i)
+______________________________________________________________________________________________________
+4.Print all odd numbers between 1 and 100.
+for i in range(1,101):
+    if i%2==1:
+        print(i)
+__________________________________________________________________________________________________
+5.Print the multiplication table of a given number.
+num= int(input("enter the number"))
+for i  in range(1,11):
+    print(f"{num} x {i}={num*i}")
+__________________________________________________________________________________________________
+6.Calculate and print the factorial of a given number
+num= int(input("enter the number"))
+factorial=1
+for i in range(1,num+1):
+    factorial=factorial*i
+print(factorial)
+_________________________________________________________________________________________
+
+7.Calculate and print the factorial of every number from 1 to n
+n=int(input("enter the number :"))
+factorial=1
+for i in range(1,n+1):
+    factorial=factorial*i
+    print(f"factorial of {i} is {factorial}")
+____________________________________________________________________________________________
+
+8.Print all prime numbers between 1 and 100.
+for num in range(2,101):
+    prime=True
+    for i in range(2,num):
+        if num%i==0:
+            prime=False
+            break
+    else:
+      print(num)
+_______________________________________________________________________________________
+
+
+9.Check whether the given number is a prime number.
+n=4
+for i in range(2,n):
+    if n%i==0:
+        print("not prime")
+        break
+else:
+    print("prime number")
+________________________________________________________________________
+10.Print the Fibonacci series up to the required number of terms. 
+n=int(input("enter the number:"))
+a=0
+b=1
+for i in range(n):
+    print(f"{a}+{b} ={a}")
+    c=a+b
+    a=b
+    b=c
+________________________________________________________________________________
+11. Find and print the sum of the Fibonacci series.
+n=int(input("enter the number:"))
+a=0
+b=1
+total=0
+for i in range(n):
+    total=total+a
+    c=a+b
+    a=b
+    b=c
+print("sum= ",total)
+______________________________________________________________________________
+12.Find and print the sum of all factors of the given number. 
+n=int(input("enter the number"))
+factos=1
+total=0
+for i in range(1,n+1):
+    if n%i==0:
+        total=total+i
+print(total
+_______________________________________________________________________
+13.Find the HCF (Highest Common Factor) of the given numbers.
+a=int(input("enter the number:"))
+b=int(input("enter the number:"))
+hcf=1
+for i in range(1,min(a,b)+1):
+    if a%i==0 and b%i==0:
+        hcf=i
+print(hcf)
+__________________________________________________________________________
+14.Find the LCM (Least Common Multiple) of the given numbers
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+# Step 1: Find HCF
+hcf = 1
+for i in range(1, min(a, b)+1):
+    if a % i == 0 and b % i == 0:
+        hcf = i
+lcm = (a * b) // 
+print("LCM is:", lcm)
+_______________________________________________________________________________________
+
+15.Print the square of each number from 1 to n. 
+n=int(input("enter the number:"))
+for i in range(1,n+1):
+    square=i*i
+print(square)
+________________________________________________________________________
+
+16.Print the cube of each number from 1 to n.
+n=int(input("enter the number:"))
+for i in range(1,n+1):
+    square=i*i*i
+print(square)
+______________________________________________________________________
+
+17.Print all numbers between a and b that are divisible by 7.
+n=int(input("enter the number:"))
+for i in range(1,n+1):
+    if i%7==0:
+      print(i)
+_____________________________________________________________
+
+
+18.Find and print the sum of the first n natural numbers
+n=int(input("enter the number :"))
+sum=0
+for i in range(1,n+1):
+    sum=sum+i
+    print(sum)
+_______________________________________________________
+
+19. Find and print the sum of all even numbers from 1 up to n.
+n=int(input("enter the number:"))
+sum=0
+for i in range(1,n+1):
+    if i%2==0:
+        sum=sum+i
+        print(sum)
+__________________________________________________________
+20.Find and print the sum of all odd numbers from 1 up to n. 
+n=int(input("enter the numbr:"))
+sum=0
+for i in range(1,n+1):
+    if i%2==1:
+        sum=sum+i
+        print(sum)
+               
+
+
+
+    
