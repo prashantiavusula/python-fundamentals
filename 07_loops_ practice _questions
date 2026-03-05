@@ -441,10 +441,93 @@ while n>0:
     n=n//10
 print(largest)
 """
+______________________________________________________________________________________________
+break/continue
+___________________________________________________________________________________________
 """
-nested loop
+#Print numbers from 1 to 100, and stop the loop as soon as a number divisible by 
+#17 is encountered.
+for i in range(1,101):
+    if i%17==0:
+        break
+    print(i)
+    """
 """
-#Print the multiplication tables for all numbers from 1 to 10.
+#Print numbers from 1 to 100, but skip all numbers that are divisible by 5 and 
+#continue printing the rest. 
+for i in range(1,101):
+    if i%5==0:
+        continue
+    print(i)
+"""
+"""
+#Take 5 numbers as input, skip any number that is 0 using continue, and 
+#calculate the sum of the remaining numbers.
+sum = 0
+
+for i in range(5):
+    n = int(input("Enter number: "))
+    
+    if n == 0:
+        continue
+    
+    sum = sum + n
+
+print("Sum =", sum)
+"""
+"""
+# Search for a specific number in a list of inputs, and terminate the loop immediately 
+#when the number is found. 
+
+N=7
+for i in range (5):
+    n=int(input("enter the number:"))
+    if n==N:
+        break
+print("number foud")
+"""
+"""
+#Keep taking numbers from the user and print them until a negative number 
+#appears, then stop the loop. 
+while True:
+    n=int(input("enter the number:"))
+    if n<0:
+        break
+    print(n)
+"""
+"""
+# Keep taking numbers from the user and print them until a negative number appears
+while True:
+    n = int(input("enter the number:"))
+    if n < 0:
+        break
+    print(n)
+    """
+
+"""
+#Skip all odd numbers and print only the even numbers.
+while True:
+    n = int(input("enter the number:"))
+    if n % 2 == 1:
+        print("odd")
+        break
+    print("even")
+"""
+
+#Continuously add numbers in a loop and stop the loop when the sum becomes 
+#greater than 100
+total = 0
+
+while True:
+    n = int(input("Enter a number: "))
+    total += n
+    print("Current sum:", total)
+    
+    if total > 100:
+        print("Sum exceeded 100. Loop stopped.")
+        break
+
+
 
 
 
